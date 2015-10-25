@@ -1,5 +1,9 @@
 <?php 
 
+/* ADVANCED CUSTOM FIELDS SETUP */
+
+
+
 
 // 1. customize ACF path
 add_filter('acf/settings/path', 'my_acf_settings_path');
@@ -53,11 +57,11 @@ function my_acf_json_load_point( $paths ) {
     // append path
     $paths[] = get_stylesheet_directory() . '/vendor/bootstrap-genesis-addons/addons/acf/acf-json/';
     
-    
     // return
     return $paths;
-    
 }
 // */
+
+
 
 ?>
