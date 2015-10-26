@@ -19,3 +19,6 @@
 # these are easily recreated on a new project
 # with `npm install`
 node_modules/
+
+# ignore codekit config
+config.codekit
