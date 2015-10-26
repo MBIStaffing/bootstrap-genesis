@@ -1,4 +1,8 @@
 <?php
+/**
+ * You can enable/disable this feature in functions.php):
+ * add_theme_support('bsg-customizer-logo');
+ */
 
     // add customizer controls
     add_action( 'customize_register', 'bsg_navbar_brand_logo_customize_register' );
