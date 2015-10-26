@@ -1,6 +1,12 @@
-bootstrap-genesis
+MBI Staffing Wesbite 
 =================
-WordPress Genesis Child Theme setup to use Bootstrap 3, Sass, and Grunt.
+
+Frameworks Used
+----------------------------------
+- Wordpress
+- Genesis 
+- Bootstrap 3
+- Advanced Custom Fields
 
 Contributors
 ----------------------------------
