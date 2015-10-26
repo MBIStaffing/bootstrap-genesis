@@ -19,3 +19,8 @@ function load_bsg_addons() {
   }
 }
 add_action('after_setup_theme', 'load_bsg_addons');
+
+
+
+
+
