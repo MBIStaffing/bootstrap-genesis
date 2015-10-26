@@ -17,6 +17,10 @@ function load_bsg_addons() {
       require_once $file;
     }
   }
+    include_once ( get_stylesheet_directory_uri() . '/vendor/bootstrap-genesis-addons/addons/customizer-logo.php' );
+
+    
+    
 }
 add_action('after_setup_theme', 'load_bsg_addons');
 
