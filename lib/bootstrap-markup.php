@@ -1,5 +1,45 @@
 <?php
 
+
+function add_col_width_to_head() {
+?>
+<style type="text/css">
+@media (min-width: 1200px) {
+
+    .content-sidebar .container {
+        width: 1150px;
+    }
+
+    /* content-sidebar*/
+    .content-sidebar .content.col-lg-9 {
+        width: 70%;
+    }
+    .content-sidebar .sidebar.col-lg-3 {
+        width: 30%;
+    }
+
+   /* sidebar-content*/
+    .sidebar-content .content.col-lg-push-3 {
+        left: 30%;
+        width: 70%;
+    }
+    
+    .sidebar-content .sidebar.col-lg-pull-9 {
+        right: 70%;
+        width: 30%;
+    }
+    .col-lg-push-3 {
+        left: 30%!important;
+    }
+}
+
+</style>
+<?php
+}
+add_action('wp_head', 'add_col_width_to_head');
+
+
+
 // add bootstrap classes
 add_filter( 'genesis_attr_nav-primary',         'bsg_add_markup_class', 10, 2 );
 add_filter( 'genesis_attr_nav-secondary',       'bsg_add_markup_class', 10, 2 );
@@ -23,10 +63,10 @@ function bsg_add_markup_class( $attr, $context ) {
             'nav-secondary'             => 'navbar navbar-inverse navbar-static-top',
             'site-header'               => 'container',
             'site-inner'                => 'container',
-            'site-footer'               => 'container',
+            'site-footer'               => '',
             'content-sidebar-wrap'      => 'row',
-            'content'                   => 'col-sm-9',
-            'sidebar-primary'           => 'col-sm-3',
+            'content'                   => 'col-xs-12 col-sm-12 col-md-8 col-lg-9',
+            'sidebar-primary'           => 'hidden-xs hidden-sm col-md-4 col-lg-3',
             'archive-pagination'        => 'clearfix',
             'entry-content'             => 'clearfix',
             'entry-pagination'          => 'clearfix bsg-pagination-numeric',
